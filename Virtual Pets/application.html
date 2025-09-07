@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Application</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<header>
+		<div class="top">
+			<img src="images/grinning_dragon.png" alt="logo" height="200" width="200">
+			<!-- Image retrieved from https://dragon.best/contrib/grin/ -->
+			<h1>Pet Adoption Form</h1>
+		</div>
+
+		<nav>
+			<a href="index.html">Home </a>
+			<a href="about.html">About Us </a>
+			<a href="adopt.html">Adopt a Pet </a>
+			<a href="">Pet Application</a> 
+			<a href="contact.html">Contact </a>
+		</nav>
+	</header>
+
+	<main>
+		<form id="application" method="post" action="https://webdevcit.com/displayvalues.php" target="blank">
+			
+			<!-- First name -->
+			 <p class="app">
+			<label for="firstname">First Name*: </label>
+			<input required type="text" name="firstname" id="firstname">
+			</p>
+
+			<!-- Surname -->
+			<p class="app">
+			<label for="surname">Surname*: </label><input required type="text" name="surname" id="surname">
+			</p>
+
+			<!-- Email -->
+			<p class="app">
+				<label for="email">Email*: </label><input required type="email" name="email" id="email">
+			</p>
+
+			<!-- DOB -->
+			<p class="app">
+				<label for="birthdate">DOB*: </label><input required type="date" name="birthdate" id="birthdate">
+			</p>
+
+			<!-- First time adoption -->
+			<p>Is this your first time adopting a pet?</p>
+			<p class="app">
+				<label for="first_time"><input type="radio" name="first_time" id="first_time" value="Yes">Yes</label>
+				<label for="first_time"><input type="radio" name="first_time" id="first_time" value="No">No</label>
+			</p>
+
+			<!-- Pet selection -->
+			<p>Choose your pet:</p>
+			<p class="app">
+				<select name="pet">
+					<option value="squirtle">Squirtle, Turtle</option>
+					<option value="colonel">The Colonel, Hand</option>
+					<option value="krafty">Krafty, Anomaly</option>
+					<option value="gideon">Joker, Clown</option>
+				</select>
+			</p>
+
+			<!-- Home explanation -->
+			<p>Please explain why you think your home will be a good
+				fit for the pet:
+			</p>
+
+			<p class="app">
+				<textarea name="home_explanation" placeholder="Enter Details Here" cols="60" rows="10"></textarea>
+			</p>
+
+			<!-- Interests -->
+			<p class="app">
+				<p>Please select any of the following you are interested in:</p>
+				<label for="interests[]">Online social communities<input type="checkbox" name="interests[]" id="interests[]" value="online_communities"></label>
+				<label for="interests[]">Multiplayer Challenges<input type="checkbox" name="interests[]" id="interests[]" value="multiplayer_challenges"></label>
+				<label for="interests[]">Creating a storyline for a virtual pet<input type="checkbox" name="interests[]" id="interests[]" value="storyline"></label>
+				<label for="interests[]">Creating a new virtual pet<input type="checkbox" name="interests[]" id="interests[]" value="new_pet"></label>
+
+			<!-- File upload -->
+			<p class="app">
+				<label for="usersFile">Upload storyline or pet photo:</label>
+				<input type="file" id="file" name="usersFile" id="usersFile">
+			</p>
+
+			<!-- Submit & reset -->
+			<p>
+				<input type="submit">
+				<input type="reset" value="Cancel">
+			</p>
+
+		</form>
+	</main>
+
+	<footer><hr>Blueshell's Buddys&copy; 2023
+		<address>Kilronan, Inis M&oacute;r, Co. Galway</address>
+		<address><a href=mailto:figgs@blueshellsbuddies.com>
+			figgs@blueshellsbuddies.com</a>
+		</address>
+		<a href="tel:065-222-5544">065-222-5544</a>
+		<hr>
+	</footer>
+
+</body>
+
+</html>

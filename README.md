@@ -1,6 +1,6 @@
 # Blueshell's Buddies – Virtual Pets Website
 
-A fun, colourful website where users can learn about, meet, and apply to adopt virtual pets.  
+A website where users can learn about, meet, and apply to adopt virtual pets.  
 Built with HTML and CSS.
 
 ## Features
